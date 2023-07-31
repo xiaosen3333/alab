@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Media.scss";
+import "./Media.module.scss";
 import { useNavigate } from "react-router-dom";
 
 const Nav = (props: {}) => {

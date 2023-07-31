@@ -8,11 +8,10 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div style={{ background: "#0F0F0F",
-     }}>
+    <div >
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/company" element={<CompanyPage />} />
+      <Route path="/home" element={<HomePage />} />
+      <Route path="/" element={<CompanyPage />} />
       <Route path="/media" element={<MediaPage />} />
       <Route path="/product" element={<ProductPage />} />
     </Routes>
