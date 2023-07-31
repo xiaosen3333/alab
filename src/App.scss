@@ -1,0 +1,108 @@
+.logo-text {
+  top: 10px;
+  position: relative;
+
+  .text {
+    display: block;
+    font-size: 5em;
+    font-weight: 600;
+    font-family: "Avenir Black";
+    font-style: normal;
+    line-height: 80px;
+  }
+}
+
+// nav {
+//   background-color:rgba(40, 40, 40, 0.50);;
+//   width: 100vw;
+//   height: 6.5vw;
+//   margin-top: 1vw;
+//   margin-bottom: 1vw;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   .nav1 {
+//     position: relative;
+//     left: 9vw;
+//     height: 43.2%;
+//     img {
+//       height: 100%;
+//       object-fit: contain;
+//     }
+//   }
+//   .menu {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     // margin-left: 15vw;
+//     a {
+//       margin-right: 3.25vw;
+//       margin-left: 3.25vw;
+//       text-decoration: none;
+//       color: rgb(255, 255, 255);
+//       &:hover {
+//         text-decoration: underline;
+//       }
+//       font-size: 1rem;
+//       color: #FFF;
+//       font-family: Inter;
+//       font-style: normal;
+//       font-weight: 700;
+//       line-height: normal;
+//       text-align: justify;
+//     }
+//   }
+// }
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px 0;
+  left: 5vw;
+  width: 90vw;
+  border-bottom: 1px solid #ccc;
+  .footer-img {
+    position: relative;
+    left: 1vw;
+    width: 100px;
+    // height: 40px;
+  }
+  .footer-menu {
+    position: relative;
+    right: 1vw;
+    table {
+      border-collapse: collapse;
+      th {
+        font-weight: bold;
+      }
+      th, td {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    display: inline-block;
+    &:first-child {
+      margin-right: 100px;
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+}
+
