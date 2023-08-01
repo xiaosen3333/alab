@@ -1,127 +1,103 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Product.module.scss";
+import styles from "./Product.module.scss";
 import { useNavigate } from "react-router-dom";
-
-const Nav = (props: {}) => {
-  return (
-    <nav>
-      <div className="nav1">
-        <img src="/images/黑色长.png" alt="logo" className="logo-img" />
-      </div>
-      <div className="menu">
-        <a href="">首页</a>
-        <a href="">公司介绍</a>
-        <a href="">媒体宣传</a>
-        <a href="">产品中心</a>
-        <a href="">Alpha正式版</a>
-      </div>
-      <div className="">
-
-      </div>
-    </nav>
-  );
-};
-
-const Footer = (props: {}) => {
-  return (
-    <div
-      style={{
-        width: "100vw",
-        display: "block",
-      }}
-    >
-   <div className="footer-content">
-  <img src="/images/黑色长.png" alt="logo" className="footer-img"/>
-  <div className="footer-menu">
-    <table>
-      <tr>
-        <th><strong>Product</strong></th>
-        <th><strong>Project</strong></th>
-        <th><strong>About</strong></th>
-      </tr>
-      <tr>
-        <td>产品1</td>
-        <td>项目1</td>
-        <td>关于我们</td>
-      </tr>
-      <tr>
-        <td>产品2</td>
-        <td>项目2</td>
-        <td>加入我们</td>
-      </tr>
-      <tr>
-        <td>产品3</td>
-        <td>项目3</td>
-        <td>最新动态</td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-    <footer>
-    <p>版权所有 © 阿尔法实验室 2023</p>
-    <p><a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002016879">浙公网安备33011002016879号&nbsp;</a><a href="https://beian.miit.gov.cn/">浙ICP备2022036123号-1</a></p>
-    </footer>
-    </div>
-  );
-};
+import { Nav } from "../Discs/Nav";
 
 const Body = (props: {}) => {
-  return(
-    <div
-      style={{
-        width: "100vw",
-        height: "100vh",
-      }
-    }>
-        </div>
-  )
-}
-
-const Home = (props: {}) => {
   return (
-    <div
-      style={{
-        width: "100vw",
-      }}
-    >
-      <Nav />
-      <Body />
-      <Footer />
+    <div className={styles.body}>
+      <div className={styles.page}>
+        <div className={styles.banner1}>
+          <p className={styles.p_1}>产品技术</p>
+          <div
+            className={styles.line}
+            style={{ top: "-2vw", width: "6.3vw" }}
+          ></div>
+          <p className={styles.p_2} style={{ top: "3vw" }}>
+            本公司专注于EQ增强AGI数智⼈驱动平台的研发与应⽤推⼴，通过AGI数智⼈的EQ增强，形成包括观察感知、分享交互、丰富提升三⼤模块技术的⼈类情绪价值“⽣产线”，并⾃主研发了⼀套低代码、⾼模块化的热更新烘焙引擎，提供⼀整套交互代码的开发解决⽅案，致⼒于成为优质的AI-aaS供应商。
+          </p>
+        </div>
+        <div className={styles.banner2}>
+          <div className={styles.box}>
+            <div className={styles.circle}>
+              <p className={styles.p_3}>观察感知模型</p>
+            </div>
+            <div className={styles.circle}>
+              <p className={styles.p_3}>分享交互模型</p>
+            </div>
+            <div className={styles.circle}>
+              <p className={styles.p_3}>丰富提升模型</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.banner3}>
+          <div className={styles.line}></div>
+          <p className={styles.p_4}>
+            情绪数据库构建
+            <br />
+            情绪识别模型算法
+            <br />
+            关注情绪的细颗粒度用户画像
+            <br />
+          </p>
+          <div className={styles.line}></div>
+          <p className={styles.p_4}>
+            多模态情绪识别与交互引擎
+            <br />
+            ⽤户参与式的AI智能烘焙引擎
+            <br />
+            定制化科技树引擎
+            <br />
+            AI动作捕捉+⽣成引擎 <br />
+          </p>
+        </div>
+      </div>
+      <div className={styles.page}>
+        <div className={styles.banner}>
+          <p className={styles.p_1} style={{ top: "1vw" }}>
+            产品介绍
+          </p>
+          <div
+            className={styles.line}
+            style={{ top: "-1vw", left: "0vw", width: "6.3vw" }}
+          ></div>
+          <p className={styles.p_5}>
+            华数集团："小数“——数智家庭生活管家AI机器人
+          </p>
+          <p className={styles.p_4} style={{ top: "-2vw" }}>
+            小数是一款智慧家庭管家AI全息仓。采用全息仓结构+AI虚拟人的设计，服务老年人居家养老场景。作为新一代智慧家庭的终端入口，可以为老年人提供接入数字生活的捷径，为消除老年人数字鸿沟问题提供一种可能性，本产品作为典型案例已经被《人民日报》要闻头条报道。
+          </p>
+          <div className={styles.news}>
+            <img src="./images/xiaoshu1.svg" alt="" />
+            <img src="./images/xiaoshu2.svg" alt="" />
+          </div>
+        </div>
+        <div className={styles.backcircle}></div>
+        <div className={styles.footer}>
+          <div className={styles.row} style={{ left: "8vw" }}>
+            <img src="./images/白色长.png" alt="" />
+            <div className={styles.columline}></div>
+            <div className={styles.info}>
+              <p className={styles.p_6}>地址：杭州市余杭区浙江大学校友企业总部经济园1期A20栋4楼<br />
+电话：0571-88888888<br />
+邮箱：rain@xsyq.com</p>
+            </div>
+          </div>
+          <div className={styles.row} style={{ left: "-0.5vw" , top:"-0.4vw"}}>
+            <img style={{height:"50%"} }src="./images/gongan.svg" alt="" />
+            <p className={styles.p_7} style={{left:"0.5vw"}}>浙公网安备 33011002017009号</p>
+            </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-// const App = (props: {}) => {
-//   const isFirst = useRef(true)
-//   let [counter, setCounter] = useState(0)
-
-//   useEffect(() => {
-//     if (isFirst.current) {
-//       setInterval(() => {
-//         setCounter(counter => counter + 1)
-//       }, 1000)
-//       isFirst.current = false
-//     }
-//   }, [])
-
-//   return (
-//     <div
-//       style={{
-//         width: "100vw",
-//         height: "100vh",
-//         display: "flex",
-//         justifyContent: "center",
-//         alignItems: "center",
-//       }}
-//     >
-//       {/* <img src="/images/logo.jpg" alt="" /> */}
-//       <div style={{}}>
-//         <LogoText color="black" />
-//         {counter}
-//       </div>
-//     </div>
-//   );
-// };
-
-export default Home;
+export const ProductPage = (props: {}) => {
+  return (
+    <div>
+      <Nav page={3} />
+      <Body />
+    </div>
+  );
+};

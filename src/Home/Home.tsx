@@ -1,26 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import  styles  from  "./Home.module.scss";
 import { useNavigate, Link } from "react-router-dom";
-
-const Nav = (props: {}) => {
-  return (
-    <nav>
-      <div className={styles.nav1}>
-        <img src="/images/白色长.png" alt="logo" className="logo-img" />
-      </div>
-      <div className={styles.menu}>
-        <Link to="/">首页</Link>
-        <Link to="/company">公司介绍</Link>
-        <Link to="/media">媒体宣传</Link>
-        <Link to="/product">产品中心</Link>
-      </div>
-      <div className={styles.nav2}>
-        <Link to="">Alpha正式版</Link>
-        <img src="./images/nav2.svg" alt="" />
-      </div>
-    </nav>
-  );
-};
+import {Nav} from "../Discs/Nav"
 
 const Body = (props: {}) => {
   return (
@@ -59,7 +40,7 @@ const Body = (props: {}) => {
   );
 };
 
-const Home = (props: {}) => {
+export const HomePage = (props: {}) => {
   return (
     <div
       style={{
@@ -67,10 +48,10 @@ const Home = (props: {}) => {
         height: "100vh",
       }}
     >
-      <Nav />
+      <Nav page={0}/>
       <Body />
     </div>
   );
 };
 
-export default Home;
+// export default HomePage;

@@ -1,89 +1,366 @@
-nav {
-    background-color: rgba(40, 40, 40, 0.5);
-    width: 100vw;
-    height: 6.5vw;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .nav1 {
-      position: relative;
-      left: 9vw;
-      height: 43.2%;
-      img {
-        height: 100%;
-        object-fit: contain;
-      }
-    }
-    .menu {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      justify-content: space-between;
-      margin-left: 12vw;
-      a {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        margin-right: 3.25vw;
-        margin-left: 3.25vw;
-        text-decoration: none;
-        &:hover {
-          border-bottom: solid 3px #238ef3;
-        }
-        font-size: 1.3rem;
-        color: #fff;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-align: justify;
-      }
-      a:nth-child(2) {
-        border-bottom: solid 3px #238ef3;
-      }
+.body {
+  // position: fixed;
+  width: 600vw;
+  height: 100vh;
+  // left: -500vw;
+  display: flex;
+  background: black;
+  .p_1 {
+    color: #fff;
+    font-family: HarmonyOS Sans;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: justify;
+    border-bottom: #238ef3 solid 0.2rem;
+    position: relative;
+    padding-bottom: 1vw;
+  }
+  .p_2 {
+    color: #fff;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 1.5vw;
+  }
+  .p_3 {
+    color: #fff;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem; /* 145.833% */
+    letter-spacing: 0.25vw;
+    margin-left: 1.6vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-right: 1.9vw;
+  }
+  .p_4 {
+    color: #d3d3d3;
+    text-align: justify;
+    font-family: HarmonyOS Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    top: -1vw;
+  }
 
-      a:nth-child(1),
-      a:nth-child(3),
-      a:nth-child(4) {
-        opacity: 0.5;
-        border-bottom: 0px;
-      }
+  .page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .table_1 {
+    width: 80.72vw;
+    height: 26.67vw;
+    display: grid;
+    grid-template-columns: repeat(6, 12.552vw);
+    grid-gap: 1.5625vw 0.833vw;
+    .imgs {
+      width: 12.552vw;
+      height: 12.552vw;
     }
-    .nav2 {
+    .imgs:nth-child(1) {
+      background: url("../../public/images/praise1.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(2) {
+      background: url("../../public/images/praise2.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(3),
+    .imgs:nth-child(4) {
+      background: url("../../public/images/praise3.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(5) {
+      background: url("../../public/images/praise4.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(6) {
+      background: url("../../public/images/praise5.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(7) {
+      background: url("../../public/images/praise6.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(8) {
+      background: url("../../public/images/praise7.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(9),
+    .imgs:nth-child(10),
+    .imgs:nth-child(11) {
+      background: url("../../public/images/praise8.svg") no-repeat
+        center/contain;
+    }
+    .imgs:nth-child(12) {
+      background: url("../../public/images/praise6.svg") no-repeat
+        center/contain;
+    }
+  }
+  .banner1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80.2vw;
+    height: 38.7vw;
+    .banner2_1 {
+      width: 78vw;
+      height: 30.7vw;
+      position: relative;
+      top: 2vw;
+      background: linear-gradient(
+          270deg,
+          #1b1a1f 0%,
+          rgba(27, 26, 31, 0.53) 16.67%,
+          rgba(27, 26, 31, 0) 100%
+        ),
+        url("../../public/images/company1.svg") no-repeat center/contain;
       display: flex;
-      align-items: center;
-      height: 100%;
-      justify-content: space-between;
-      margin-right: 6.57vw;
-      a {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      .box1_1 {
+        width: 36.495vw;
+        height: 3.416vw;
+        border-radius: 1.04vw;
+        background: linear-gradient(
+          81deg,
+          rgba(35, 142, 243, 0.9) 0%,
+          rgba(35, 142, 243, 0) 100%
+        );
         display: flex;
         align-items: center;
-        height: 100%;
-        text-decoration: none;
-        font-size: 1.4rem;
-        color: #fff;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-align: justify;
+        position: relative;
+        left: -4.8vw;
+        bottom: 0.6vw;
       }
-      img {
-        width: 1.25vw;
-        margin-left: 0.677vw;
+      .box2_1 {
+        border-radius: 2.08vw;
+        background: rgba(40, 40, 40, 0.7);
+        width: 40.92vw;
+        height: 14.2vw;
+        position: relative;
+        right: 1vw;
+      }
+    }
+    .banner2_2 {
+      width: 78vw;
+      height: 30.7vw;
+      position: relative;
+      top: 2.5vw;
+      background: linear-gradient(
+          90deg,
+          #1b1a1f 0%,
+          rgba(27, 26, 31, 0.53) 16.67%,
+          rgba(27, 26, 31, 0) 100%
+        ),
+        url("../../public/images/company2.svg") no-repeat center/contain;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      .box1_2 {
+        width: 36.2vw;
+        height: 3.1vw;
+        border-radius: 1.04vw;
+        background: linear-gradient(
+          270deg,
+          rgba(35, 142, 243, 0.9) 0%,
+          rgba(35, 142, 243, 0) 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        left: 4vw;
+        bottom: 0.39vw;
+        p {
+          margin-right: 2vw;
+        }
+      }
+      .box2_2 {
+        border-radius: 2.08vw;
+        background: rgba(40, 40, 40, 0.7);
+        width: 40.2vw;
+        height: 14.2vw;
+        position: relative;
+        p {
+          font-size: 1.1rem;
+          line-height: 1.7rem;
+        }
+      }
+    }
+    .banner2_3 {
+      width: 78vw;
+      height: 30.7vw;
+      position: relative;
+      top: 2.5vw;
+      background: linear-gradient(
+          270deg,
+          #1b1a1f 0%,
+          rgba(27, 26, 31, 0.53) 16.67%,
+          rgba(27, 26, 31, 0) 100%
+        ),
+        url("../../public/images/company3.svg") no-repeat center/contain;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      .box1_3 {
+        width: 36.495vw;
+        height: 5.78125vw;
+        border-radius: 1.04vw;
+        background: linear-gradient(
+          81deg,
+          rgba(35, 142, 243, 0.9) 0%,
+          rgba(35, 142, 243, 0) 100%
+        );
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: -4.8vw;
+        bottom: 0.6vw;
+      }
+      .box2_3 {
+        border-radius: 2.08vw;
+        background: rgba(40, 40, 40, 0.7);
+        width: 40.92vw;
+        height: 13.28125vw;
+        position: relative;
+        right: 0.5vw;
+        p {
+          font-size: 1.144rem;
+          line-height: 1.72rem;
+          letter-spacing: 0.125vw;
+        }
       }
     }
   }
+  .banner3 {
+    width: 85.729vw;
+    height: 29.32vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 2vw;
+    justify-content: space-between;
+    .document {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 16.09vw;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        #282828 0%,
+        rgba(40, 40, 40, 0) 52.08%,
+        #282828 100%
+      );
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-.body {
-    position: fixed;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  background: black;
-  
+      .p_5 {
+        color: #238ef3;
+        font-family: HarmonyOS Sans;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .p_6 {
+        width: 80%;
+        height: 50%;
+        color: #fff;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+      }
+    }
+  }
+  .banner4 {
+    width: 82.604vw;
+    height: 39.86vw;
+    position: relative;
+    left: 3vw;
+    top: 5vw;
+    display: flex;
+    .team {
+      width: 70.68vw;
+      height: 37.86vw;
+      background: url("../../public/images/company4.svg") no-repeat
+        center/contain;
+    }
+    .box3 {
+      position: relative;
+      left: -5vw;
+      top :-5vw;
+      width: 35.177vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .tag {
+        margin-bottom: 2vw;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 2.8125vw;
+        justify-content: space-between;
+        .box4 {
+          width: 9vw;
+          margin-right: 1vw;
+          height: 100%;
+          border-radius: 1.0417vw;
+          background: #238ef3;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .p_7 {
+            color: #1b1a1f;
+            text-align: center;
+            font-family: HarmonyOS Sans;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5rem; /* 145.833% */
+          }
+        }
+      }
+      .box2_4 {
+        width: 100%;
+        height: 18.333vw;
+        border-radius: 2.083vw;
+        background: rgba(40, 40, 40, 0.7);
+        display: inline;
+        .p_3 {
+          position: relative;
+          top: 0.5vw;
+          left: 0.6vw;
+          width: 86%;
+          white-space: normal;
+          font-size: 1.05rem;
+          line-height: 1.9rem;
+          letter-spacing: normal;
+          span {
+            color: #238EF3;
+          }
+        }
+      }
+    }
+  }
 }
