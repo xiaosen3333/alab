@@ -8,12 +8,12 @@
   .p_1 {
     color: #fff;
     font-family: HarmonyOS Sans;
-    font-size: 1.6rem;
+    font-size: 2.083vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: justify;
-    border-bottom: #238ef3 solid 0.2rem;
+    border-bottom: #238ef3 solid 0.2083vw;
     position: relative;
     padding-bottom: 1vw;
   }
@@ -21,7 +21,7 @@
     color: #fff;
     text-align: justify;
     font-family: Inter;
-    font-size: 1.5rem;
+    font-size: 1.67vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -31,21 +31,22 @@
     color: #fff;
     text-align: justify;
     font-family: Inter;
-    font-size: 1.2rem;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.7rem; /* 145.833% */
+    line-height: 1.8229vw; /* 145.833% */
     letter-spacing: 0.25vw;
-    margin-left: 1.6vw;
+    margin-left: 1.354vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
     margin-right: 1.9vw;
+    position: relative;
   }
   .p_4 {
     color: #d3d3d3;
     text-align: justify;
     font-family: HarmonyOS Sans;
-    font-size: 1.2rem;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -145,13 +146,13 @@
         display: flex;
         align-items: center;
         position: relative;
-        left: -4.8vw;
+        left: -4.5vw;
         bottom: 0.6vw;
       }
       .box2_1 {
         border-radius: 2.08vw;
         background: rgba(40, 40, 40, 0.7);
-        width: 40.92vw;
+        width: 40vw;
         height: 14.2vw;
         position: relative;
         right: 1vw;
@@ -174,7 +175,7 @@
       align-items: flex-start;
       justify-content: flex-end;
       .box1_2 {
-        width: 36.2vw;
+        width: 36.9vw;
         height: 3.1vw;
         border-radius: 1.04vw;
         background: linear-gradient(
@@ -186,7 +187,7 @@
         align-items: center;
         justify-content: flex-end;
         position: relative;
-        left: 4vw;
+        left: 3vw;
         bottom: 0.39vw;
         p {
           margin-right: 2vw;
@@ -199,8 +200,8 @@
         height: 14.2vw;
         position: relative;
         p {
-          font-size: 1.1rem;
-          line-height: 1.7rem;
+          margin-right: 0.5vw;
+          right: 0.4vw;
         }
       }
     }
@@ -243,8 +244,8 @@
         position: relative;
         right: 0.5vw;
         p {
-          font-size: 1.144rem;
-          line-height: 1.72rem;
+          font-size: 1.21058vw;
+          line-height: 1.82vw;
           letter-spacing: 0.125vw;
         }
       }
@@ -277,17 +278,19 @@
       .p_5 {
         color: #238ef3;
         font-family: HarmonyOS Sans;
-        font-size: 2rem;
+        font-size: 1.67vw;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
       }
       .p_6 {
-        width: 80%;
+        width: 11.4583vw;
         height: 50%;
+        text-align: justify;
+        font-family: HarmonyOS Sans;
         color: #fff;
-        font-size: 1.3rem;
-        line-height: 1.8rem;
+        font-size: 1.25vw;
+        line-height: 1.82291vw;
       }
     }
   }
@@ -303,12 +306,13 @@
       height: 37.86vw;
       background: url("../../public/images/company4.svg") no-repeat
         center/contain;
+        background-size: 100% 100%;
     }
     .box3 {
       position: relative;
-      left: -5vw;
-      top :-5vw;
-      width: 35.177vw;
+      left: -3.5vw;
+      top: -5vw;
+      width: 38.177vw;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
@@ -317,12 +321,12 @@
         margin-bottom: 2vw;
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 105%;
         height: 2.8125vw;
         justify-content: space-between;
         .box4 {
-          width: 9vw;
-          margin-right: 1vw;
+          width: 10.3125vw;
+          // margin-right: 1vw;
           height: 100%;
           border-radius: 1.0417vw;
           background: #238ef3;
@@ -334,30 +338,30 @@
             color: #1b1a1f;
             text-align: center;
             font-family: HarmonyOS Sans;
-            font-size: 1.2rem;
+            font-size: 1.25vw;
             font-style: normal;
             font-weight: 400;
-            line-height: 1.5rem; /* 145.833% */
+            line-height: 1.82291vw; /* 145.833% */
           }
         }
       }
       .box2_4 {
-        width: 100%;
-        height: 18.333vw;
+        width: 105%;
+        height: 17.733vw;
         border-radius: 2.083vw;
         background: rgba(40, 40, 40, 0.7);
         display: inline;
         .p_3 {
           position: relative;
           top: 0.5vw;
-          left: 0.6vw;
-          width: 86%;
+          left: 0.2vw;
+          width: 90%;
           white-space: normal;
-          font-size: 1.05rem;
-          line-height: 1.9rem;
+          font-size: 1.25vw;
+          line-height: 1.82291vw;
           letter-spacing: normal;
           span {
-            color: #238EF3;
+            color: #238ef3;
           }
         }
       }

@@ -10,6 +10,8 @@
   overflow: hidden;
   height: 100vh;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   .banner1 {
     background-color: black;
     display: flex;
@@ -17,6 +19,8 @@
     width: 100vw;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  // justify-content: center;
     .logo_box {
       width: 27.6vw;
       margin-left: 7.08vw;
@@ -32,7 +36,7 @@
         p {
           color: #999;
           font-family: Inter;
-          font-size: 1.5rem;
+          font-size: 1.67vw;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
@@ -40,16 +44,18 @@
         }
         width: 25.78vw;
         height: 3.59vw;
-        border: 0.2rem solid #238ef3;
+        border: 0.15625vw solid #238ef3;
       }
     }
     .cartoon {
       width: 62.7vw;
       //   height: 100%;
-      img {
-        // height: 100%;
+      position: relative;
+      right: -10vw;
+      top: 1vw;
+      Canvas {
         height: 56.25vw;
-        z-index: 0;
+        
       }
     }
   }
@@ -74,7 +80,7 @@
           margin-top: 5.125vw;
           color: #fff;
           font-family: Poppins;
-          font-size: 3rem;
+          font-size: 3.333vw;
           font-weight: 700;
           word-wrap: break-word;
         }
@@ -88,10 +94,10 @@
             padding-right: 0.5vw;
             color: #A7A7A7;
             font-family: Poppins;
-            font-size: 2rem;
+            font-size: 1.875vw;
             font-weight: 700;
             word-wrap: break-word;
-            border-right: solid 0.18rem #238ef3;
+            border-right: solid 0.15625vw #238ef3;
         }
         img {
             width: 20.57vw;

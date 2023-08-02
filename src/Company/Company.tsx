@@ -120,7 +120,7 @@ const Body = (props: {}) => {
               <div className={styles.box4}>
                 <p className={styles.p_7}>构成领域多元</p>
               </div>
-              <div className={styles.box4}>
+              <div className={styles.box4} style={{ marginRight: "0" }}>
                 <p className={styles.p_7}>专业技能广泛</p>
               </div>
             </div>

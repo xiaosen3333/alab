@@ -11,7 +11,7 @@ const Body = (props: {}) => {
           <p className={styles.p_1}>产品技术</p>
           <div
             className={styles.line}
-            style={{ top: "-2vw", width: "6.3vw" }}
+            style={{ top: "-2vw", width: "7vw" }}
           ></div>
           <p className={styles.p_2} style={{ top: "3vw" }}>
             本公司专注于EQ增强AGI数智⼈驱动平台的研发与应⽤推⼴，通过AGI数智⼈的EQ增强，形成包括观察感知、分享交互、丰富提升三⼤模块技术的⼈类情绪价值“⽣产线”，并⾃主研发了⼀套低代码、⾼模块化的热更新烘焙引擎，提供⼀整套交互代码的开发解决⽅案，致⼒于成为优质的AI-aaS供应商。
@@ -40,8 +40,8 @@ const Body = (props: {}) => {
             关注情绪的细颗粒度用户画像
             <br />
           </p>
-          <div className={styles.line}></div>
-          <p className={styles.p_4}>
+          <div className={styles.line} style={{ top: "3vw" }}></div>
+          <p className={styles.p_4} style={{ top: "3vw" }}>
             多模态情绪识别与交互引擎
             <br />
             ⽤户参与式的AI智能烘焙引擎
@@ -64,7 +64,7 @@ const Body = (props: {}) => {
           <p className={styles.p_5}>
             华数集团："小数“——数智家庭生活管家AI机器人
           </p>
-          <p className={styles.p_4} style={{ top: "-2vw" }}>
+          <p className={styles.p_4} style={{ top: "-2vw", width: "101%" }}>
             小数是一款智慧家庭管家AI全息仓。采用全息仓结构+AI虚拟人的设计，服务老年人居家养老场景。作为新一代智慧家庭的终端入口，可以为老年人提供接入数字生活的捷径，为消除老年人数字鸿沟问题提供一种可能性，本产品作为典型案例已经被《人民日报》要闻头条报道。
           </p>
           <div className={styles.news}>
@@ -83,7 +83,7 @@ const Body = (props: {}) => {
 邮箱：rain@xsyq.com</p>
             </div>
           </div>
-          <div className={styles.row} style={{ left: "-0.5vw" , top:"-0.4vw"}}>
+          <div className={styles.row} style={{ left: "-0.6vw" , top:"-0.4vw"}}>
             <img style={{height:"50%"} }src="./images/gongan.svg" alt="" />
             <p className={styles.p_7} style={{left:"0.5vw"}}>浙公网安备 33011002017009号</p>
             </div>
